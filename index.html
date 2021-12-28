@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What is R?</title>
+  <meta charset="utf-8">
+  <meta name="description" content="What is R?">
+  <meta name="author" content="Ben Dickins">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/Rlogo.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>What is R?</h1>
+    <h2>An Introduction to R</h2>
+    <p>Ben Dickins<br/>Senior Lecturer</p>
+  </hgroup>
+  
+  <article></article>  
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <hgroup>
+    <h2>Introduction to R</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of operating systems including Windows, MacOS and assorted linux distributions.</p>
+
+<p>RStudio is a set of integrated tools designed to help you be more productive with R. This is referred to as an Integrated Development Environment or IDE. Alternative IDEs for R include <a href="https://rkward.kde.org">RKWard</a> and even <a href="https://code.visualstudio.com">Visual Studio Code</a> when <a href="https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6">properly configured</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Installing R</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>If you have administrative access to the computer you are using you should be able to install the R and RStudio programs. If you do not have admin access you can try RStudio Cloud.</p>
+
+<table><thead>
+<tr>
+<th align="center">To Install &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+<th>Go to</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">R</td>
+<td><a href="https://www.r-project.org">R homepage</a> and follow the links to CRAN (Comprehensive R Access Network), selecting a mirror site near your current location,</td>
+</tr>
+<tr>
+<td align="center">RStudio</td>
+<td><a href="https://www.rstudio.com/products/rstudio/download/">RStudio.com</a> and choose the open source &quot;Desktop edition&quot;,</td>
+</tr>
+<tr>
+<td align="center">RStudio Cloud</td>
+<td><a href="https://rstudio.cloud">RStudio Cloud</a> and sign up for a free account.</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>The R Environment</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>The text-based R environment is known as the <strong>console</strong> and is accessible via:</p>
+
+<table><thead>
+<tr>
+<th>A Terminal Emulator</th>
+<th>R Standalone App</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><img src="assets/img/Rterminal.png" alt="iTerm2" title="R Terminal"></td>
+<td><img src="assets/img/RGUI.png" alt="R GUI" title="R GUI"></td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>RStudio GUI</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Here is what the RStudio Graphical User Interface (GUI) looks like:</p>
+
+<p><img src="assets/img/RStudio.png" alt="RStudio GUI" title="RStudio GUI"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Getting Help</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Getting help from R&#39;s built-in facility. For a given function &quot;makecupcake&quot; you can invoke the help pages using the <code>?</code> character. For this example you would type the following into the console:</p>
+
+<pre><code class="r">?makecupcakes
+</code></pre>
+
+<p>Note that the console has a flashing cursor just to the right of a <code>&gt;</code> character. The <code>&gt;</code> is known as the prompt command and it means that R is expecting you to input a command.</p>
+
+<p>Let&#39;s try this for a more informative function:</p>
+
+<pre><code class="r">?mean
+</code></pre>
+
+<p>What did you get when you did this in RStudio?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Help via Fuzzy Search</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Do you need more information or can&#39;t you find what you are looking for? Use <code>??</code>:</p>
+
+<pre><code class="r">??&quot;cupcakes&quot;
+</code></pre>
+
+<p>Also you can obtain more details on features specified by special characters:</p>
+
+<pre><code class="r">?&quot;[[&quot;
+</code></pre>
+
+<p>We&#39;ll try some of these in the next slide.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Fuzzy Search Examples</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Let&#39;s try a couple:</p>
+
+<pre><code class="r">??&quot;average&quot;
+?&quot;%*%&quot;
+</code></pre>
+
+<p>Let&#39;s try something new (and please don&#39;t be frustrated by the result!). Type the following command:</p>
+
+<pre><code class="r">q()
+</code></pre>
+
+<p>What happened?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Fetching Examples</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>To get an example of the use of a function (or topic), you can try:</p>
+
+<pre><code class="r">example(cupcakes)
+</code></pre>
+
+<p>Have a go yourself:</p>
+
+<pre><code class="r">example(mean)
+</code></pre>
+
+<pre><code>## 
+## mean&gt; x &lt;- c(0:10, 50)
+## 
+## mean&gt; xm &lt;- mean(x)
+## 
+## mean&gt; c(xm, mean(x, trim = 0.10))
+## [1] 8.75 5.50
+</code></pre>
+
+<p>Try the same for the <code>sd</code> function. Can you figure out what it does?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Bracket Meltdown! (and how to avoid it...)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>If a command is not complete at the end of a line, R will give a different prompt, by default this is <code>+</code>.</p>
+
+<p>You will experience this a lot. So be careful with opening and closing your brackets, for example try:</p>
+
+<pre><code class="r">mean(c(1,2,4,3)
+</code></pre>
+
+<p>You will see the prompt transform into a <code>+</code> meaning that it expects more input. To get out of this you can do one of two things:</p>
+
+<ol class = "build incremental">
+<li>close all the braces in the expression (in this case this means adding another <code>)</code>), or</li>
+<li>(if you can&#39;t figure it out) press the &quot;Escape&quot; key on your keyboard.</li>
+</ol>
+
+<p>Option 2 will cancel the command, but will rescue you from bracket meltdown.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>THE END</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction to R'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Installing R'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The R Environment'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='RStudio GUI'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Getting Help'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Help via Fuzzy Search'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Fuzzy Search Examples'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Fetching Examples'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Bracket Meltdown! (and how to avoid it...)'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='THE END'>
+         10
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+
+  
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
