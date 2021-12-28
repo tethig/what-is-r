@@ -3,14 +3,21 @@ title       : What is R?
 subtitle    : An Introduction to R
 author      : Ben Dickins
 job         : Senior Lecturer
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+date        : "28/12/2021"
+output      : ioslides_presentation
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+hitheme     : zenburn      # {zenburn, tomorrow, solarized-dark, ...}
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {selfcontained, standalone, draft}
 knit        : slidify::knit2slides
-logo        : Rlogo.png
+logo        : "images/Rlogo.png"
+github:
+  user: tethig
+  repo: what-is-r
+  branch: "gh-pages"
 ---
+
+
 
 ## Introduction to R
 
@@ -18,7 +25,7 @@ R is a free software environment for statistical computing and graphics. It comp
 
 RStudio is a set of integrated tools designed to help you be more productive with R. This is referred to as an Integrated Development Environment or IDE. Alternative IDEs for R include [RKWard](https://rkward.kde.org) and even [Visual Studio Code](https://code.visualstudio.com) when [properly configured](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6).
 
---- .class #id 
+--- .class #id
 
 ## Installing R
 
@@ -30,7 +37,7 @@ If you have administrative access to the computer you are using you should be ab
 | RStudio       | [RStudio.com](https://www.rstudio.com/products/rstudio/download/) and choose the open source "Desktop edition", |
 | RStudio Cloud | [RStudio Cloud](https://rstudio.cloud) and sign up for a free account. |
 
---- .class #id 
+--- .class #id
 
 ## The R Environment
 
@@ -38,17 +45,17 @@ The text-based R environment is known as the **console** and is accessible via:
 
 | A Terminal Emulator                   | R Standalone App           |
 |---------------------------------------|----------------------------|
-| ![iTerm2](assets/img/Rterminal.png "R Terminal") | ![R GUI](assets/img/RGUI.png "R GUI") |
+| ![iTerm2](images/Rterminal.png "R Terminal") | ![R GUI](images/RGUI.png "R GUI") |
 
---- .class #id 
+--- .class #id
 
 ## RStudio GUI
 
 Here is what the RStudio Graphical User Interface (GUI) looks like:
 
-![RStudio GUI](assets/img/RStudio.png "RStudio GUI")
+![RStudio GUI](images/RStudio.png "RStudio GUI")
 
---- .class #id 
+--- .class #id
 
 ## Getting Help
 
@@ -69,7 +76,7 @@ Let's try this for a more informative function:
 ```
 What did you get when you did this in RStudio?
 
---- .class #id 
+--- .class #id
 
 ## Help via Fuzzy Search
 
@@ -88,7 +95,7 @@ Also you can obtain more details on features specified by special characters:
 
 We'll try some of these in the next slide.
 
---- .class #id 
+--- .class #id
 
 ## Fuzzy Search Examples
 
@@ -109,7 +116,7 @@ q()
 
 What happened?
 
---- .class #id 
+--- .class #id
 
 ## Fetching Examples
 
@@ -139,7 +146,7 @@ example(mean)
 
 Try the same for the `sd` function. Can you figure out what it does?
 
---- .class #id 
+--- .class #id
 
 ## Bracket Meltdown! (and how to avoid it...)
 
@@ -159,6 +166,6 @@ You will see the prompt transform into a `+` meaning that it expects more input.
 
 Option 2 will cancel the command, but will rescue you from bracket meltdown.
 
---- .class #id 
+--- .class #id
 
 ## THE END

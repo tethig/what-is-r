@@ -12,11 +12,8 @@
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
-<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
-<link rel=stylesheet href="./assets/css/ribbons.css"></link>
-
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -35,7 +32,7 @@
         <slide class="title-slide segue nobackground">
   
   <aside class="gdbar">
-    <img src="assets/img/Rlogo.png">
+    <img src="assets/img/images/Rlogo.png">
   </aside>
   
   <hgroup class="auto-fadein">
@@ -43,6 +40,10 @@
     <h2>An Introduction to R</h2>
     <p>Ben Dickins<br/>Senior Lecturer</p>
   </hgroup>
+  
+    <a href="https://github.com/tethig/what-is-r/zipball/gh-pages" class="example">
+     Download
+    </a>
   
   <article></article>  
   
@@ -116,8 +117,8 @@
 </tr>
 </thead><tbody>
 <tr>
-<td><img src="assets/img/Rterminal.png" alt="iTerm2" title="R Terminal"></td>
-<td><img src="assets/img/RGUI.png" alt="R GUI" title="R GUI"></td>
+<td><img src="images/Rterminal.png" alt="iTerm2" title="R Terminal"></td>
+<td><img src="images/RGUI.png" alt="R GUI" title="R GUI"></td>
 </tr>
 </tbody></table>
 
@@ -135,7 +136,7 @@
   <article data-timings="">
     <p>Here is what the RStudio Graphical User Interface (GUI) looks like:</p>
 
-<p><img src="assets/img/RStudio.png" alt="RStudio GUI" title="RStudio GUI"></p>
+<p><img src="images/RStudio.png" alt="RStudio GUI" title="RStudio GUI"></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -375,35 +376,7 @@
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
-  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
-<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
-<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
-
-  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true
-      }
-    });
-  </script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script> -->
   
-<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
-</script>
-
-  
-  <script>  
-  $(function (){ 
-    $("#example").popover(); 
-    $("[rel='tooltip']").tooltip(); 
-  });  
-  </script>  
   <!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
