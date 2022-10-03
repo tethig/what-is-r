@@ -7,7 +7,7 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.36">
+  <meta name="generator" content="quarto-1.1.251">
 
   <meta name="author" content="Ben Dickins">
   <title>What is R?</title>
@@ -19,10 +19,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -395,50 +400,40 @@
 <section id="installing-r" class="slide level2">
 <h2>Installing R</h2>
 <p>If you have administrative access to the computer you are using you should be able to install the R and RStudio programs. If you do not have admin access you can try RStudio Cloud.</p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">TO INSTALL</th>
-<th>GO TO</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">R</td>
-<td><a href="https://www.r-project.org">R homepage</a> and follow the links to CRAN (Comprehensive R Access Network), selecting a mirror site near your current location,</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">RStudio</td>
-<td><a href="https://www.rstudio.com/products/rstudio/download/">RStudio.com</a> and choose the open source “Desktop edition”,</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">RStudio Cloud</td>
-<td><a href="https://rstudio.cloud">RStudio Cloud</a> and sign up for a free account.</td>
-</tr>
-</tbody>
-</table>
+<div class="columns">
+<div class="column" style="width:25%;">
+<p>TO INSTALL<br>
+<br>
+R<br>
+<br>
+<br>
+<br>
+RStudio<br>
+<br>
+<br>
+RStudio Cloud</p>
+</div><div class="column" style="width:75%;">
+<p>GO TO<br>
+<br>
+<a href="https://www.r-project.org">R homepage</a> and follow the links to CRAN (Comprehensive R Access Network), selecting a mirror site near your current location,<br>
+<br>
+<a href="https://www.rstudio.com/products/rstudio/download/">RStudio.com</a> and choose the open source “Desktop edition”,<br>
+<br>
+<a href="https://rstudio.cloud">RStudio Cloud</a> and sign up for a free account.</p>
+</div>
+</div>
+<pre><code>                                                                          |</code></pre>
 </section>
 <section id="the-r-environment" class="slide level2">
 <h2>The R Environment</h2>
 <p>The text-based R environment is known as the <strong>console</strong> and is accessible via:</p>
-<table>
-<colgroup>
-<col style="width: 46%">
-<col style="width: 53%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>A Terminal Emulator</th>
-<th>R Standalone App</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><img data-src="images/Rterminal.png" title="R Terminal" width="337" alt="iTerm2"></td>
-<td><img data-src="images/RGUI.png" title="R GUI" width="320" alt="R GUI"></td>
-</tr>
-</tbody>
-</table>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A Terminal Emulator <img data-src="images/Rterminal.png" title="R Terminal" width="380" alt="iTerm2"></p>
+</div><div class="column" style="width:50%;">
+<p>R Standalone App <img data-src="images/RGUI.png" title="R GUI" width="380" alt="R GUI"></p>
+</div>
+</div>
 </section>
 <section id="rstudio-gui" class="slide level2">
 <h2>RStudio GUI</h2>
@@ -449,12 +444,12 @@
 <h2>Getting Help</h2>
 <p>Getting help from R’s built-in facility. For a given function “makecupcake” you can invoke the help pages using the <code>?</code> character. For this example you would type the following into the console:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>?makecupcakes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>?makecupcakes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Note that the console has a flashing cursor just to the right of a <code>&gt;</code> character. The <code>&gt;</code> is known as the prompt command and it means that R is expecting you to input a command.</p>
 <p>Let’s try this for a more informative function:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>?mean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>?mean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>What did you get when you did this in RStudio?</p>
 </section>
@@ -462,11 +457,11 @@
 <h2>Help via Fuzzy Search</h2>
 <p>Do you need more information or can’t you find what you are looking for? Use <code>??</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>??<span class="st">"cupcakes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>??<span class="st">"cupcakes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Also you can obtain more details on features specified by special characters:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>?<span class="st">"[["</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>?<span class="st">"[["</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll try some of these in the next slide.</p>
 </section>
@@ -474,12 +469,12 @@
 <h2>Fuzzy Search Examples</h2>
 <p>Let’s try a couple:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>??<span class="st">"average"</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>?<span class="st">"%*%"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>??<span class="st">"average"</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>?<span class="st">"%*%"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Let’s try something new (and please don’t be frustrated by the result!). Type the following command:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">q</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">q</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>What happened?</p>
 </section>
@@ -487,11 +482,11 @@
 <h2>Fetching Examples</h2>
 <p>To get an example of the use of a function (or topic), you can try:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">example</span>(cupcakes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">example</span>(cupcakes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Have a go yourself:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">example</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">example</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Try the same for the <code>sd</code> function. Can you figure out what it does?</p>
 </section>
@@ -500,7 +495,7 @@
 <p>If a command is not complete at the end of a line, R will give a different prompt, by default this is <code>+</code>.</p>
 <p>You will experience this a lot. So be careful with opening and closing your brackets, for example try:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You will see the prompt transform into a <code>+</code> meaning that it expects more input. To get out of this you can do one of two things:</p>
 <ol type="1">
@@ -836,7 +831,8 @@
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          let href = ref.getAttribute('href');
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);

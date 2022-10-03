@@ -19,19 +19,46 @@ RStudio is a set of integrated tools designed to help you be more productive wit
 
 If you have administrative access to the computer you are using you should be able to install the R and RStudio programs. If you do not have admin access you can try RStudio Cloud.
 
-|  TO INSTALL   | GO TO                                                                                                                                                      |
-|:-------------------------------------------:|---------------------------|
-|       R       | [R homepage](https://www.r-project.org) and follow the links to CRAN (Comprehensive R Access Network), selecting a mirror site near your current location, |
-|    RStudio    | [RStudio.com](https://www.rstudio.com/products/rstudio/download/) and choose the open source "Desktop edition",                                            |
-| RStudio Cloud | [RStudio Cloud](https://rstudio.cloud) and sign up for a free account.                                                                                     |
+::: columns
+::: {.column width="25%"}
+TO INSTALL\
+\
+R\
+\
+\
+\
+RStudio\
+\
+\
+RStudio Cloud
+:::
+
+::: {.column width="75%"}
+GO TO\
+\
+[R homepage](https://www.r-project.org) and follow the links to CRAN (Comprehensive R Access Network), selecting a mirror site near your current location,\
+\
+[RStudio.com](https://www.rstudio.com/products/rstudio/download/) and choose the open source "Desktop edition",\
+\
+[RStudio Cloud](https://rstudio.cloud) and sign up for a free account.
+:::
+:::
+
+                                                                              |
 
 ## The R Environment
 
 The text-based R environment is known as the **console** and is accessible via:
 
-| A Terminal Emulator                                       | R Standalone App                               |
-|------------------------------------|-----------------------------------------|
-| ![iTerm2](images/Rterminal.png "R Terminal"){width="337"} | ![R GUI](images/RGUI.png "R GUI"){width="320"} |
+::: columns
+::: {.column width="50%"}
+A Terminal Emulator ![iTerm2](images/Rterminal.png "R Terminal"){width="380"}
+:::
+
+::: {.column width="50%"}
+R Standalone App ![R GUI](images/RGUI.png "R GUI"){width="380"}
+:::
+:::
 
 ## RStudio GUI
 
